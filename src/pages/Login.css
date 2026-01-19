@@ -1,0 +1,162 @@
+:root {
+    --bg: #0f1e25;
+    --card: rgba(255, 255, 255, 0.08);
+    --border: rgba(255, 255, 255, 0.18);
+    --text: #ffffff;
+    --muted: #cbd5e1;
+    --primary: #4cc9f0;
+    --error: #ff4d4d;
+    --radius: 12px;
+}
+
+/* Page */
+.login-page {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background: radial-gradient(circle at top, #1f3b4d, var(--bg));
+    font-family: "Inter", system-ui, sans-serif;
+}
+
+/* Card */
+.login-card {
+    width: 360px;
+    padding: 36px;
+    border-radius: 16px;
+    background: var(--card);
+    backdrop-filter: blur(16px);
+    border: 1px solid var(--border);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+    color: var(--text);
+}
+
+/* Header */
+.login-title {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    padding: 12px;
+}
+
+.login-subtitle {
+    margin-top: 6px;
+    margin-bottom: 28px;
+    color: var(--muted);
+    font-size: 14px;
+}
+
+/* Fields */
+.field {
+    margin-bottom: 18px;
+
+}
+
+.field label {
+    display: block;
+    font-size: 15px;
+    margin-bottom: 6px;
+    color: var(--muted);
+}
+
+.field input {
+    width: 100%;
+    height: 44px;
+    padding: 0 14px;
+    border-radius: var(--radius);
+    border: 1.5px solid var(--border);
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--text);
+    outline: none;
+    font-size: 14px;
+}
+
+.field input:focus {
+    border-color: var(--primary);
+}
+
+/* Password field */
+.password-field {
+    position: relative;
+}
+
+.password-field input {
+    padding-right: 44px;
+}
+
+.toggle-password {
+    all: unset;
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.toggle-password:hover {
+    opacity: 1;
+}
+
+.toggle-password svg {
+    width: 18px;
+    height: 18px;
+    stroke: white;
+    fill: none;
+    stroke-width: 2;
+}
+
+/* Error */
+.error {
+    margin-bottom: 14px;
+    padding: 10px 12px;
+    font-size: 13px;
+    color: #ffdede;
+    background: rgba(255, 77, 77, 0.15);
+    border-left: 3px solid var(--error);
+    border-radius: 8px;
+}
+
+/* Button */
+.login-btn {
+    width: 100%;
+
+    border-radius: 14px;
+    border: none;
+    background: linear-gradient(135deg, #ff6a00, #f72585);
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 15px;
+    padding: 12px;
+}
+
+.login-btn:hover {
+    filter: brightness(1.05);
+}
+
+.a {
+    padding: 5px;
+}
+
+.b {
+    padding: 5px;
+}
+
+/* Sign up text below login */
+.signup-text {
+    margin-top: 18px;
+    font-size: 14px;
+    color: var(--muted);
+    text-align: center;
+}
+
+.signup-link {
+    color: var(--primary);
+    cursor: pointer;
+    font-weight: 500;
+    margin-left: 4px;
+}
+
+.signup-link:hover {
+    text-decoration: underline;
+}
